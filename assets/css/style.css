@@ -32,7 +32,6 @@ a:hover {
 
 .body {
    /* the white section with the main content */
-    border-top: solid 2px darkgray;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 10px 0px;
@@ -44,6 +43,8 @@ header {
 
 .headerfix {
     background-color: white;
+    border-bottom: solid 2px darkgray;
+
 }
 
 .bigname {
@@ -122,4 +123,47 @@ footer {
 
 footer, .push {
     height: 50px;
+}
+
+@media only screen and (max-width: 980px) {
+    .bigname {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .smallname {
+        padding: 5px;
+    }
+
+    .body {
+        width: 70%;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .body {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .bigname {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .smallnamewrapper {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .smallname {
+        margin: 5px;
+        float: none;
+    }
 }
