@@ -3,26 +3,14 @@
     overflow: auto;
 }
 
-/* .body { */
-    /* height: 1000px; */
-/* } */
-
-table {
-    padding: 10px;
-    margin: 10px;
-}
-
-th, td {
-    padding: 20px;
-}
-
-.toprow {
-    padding-top: 0px;
+.photowrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .photoicon {
     width: 195px;
-    margin: 0px 10px 10px 0px;
+    margin: 20px;
     position: relative;
 }
 
@@ -47,4 +35,12 @@ th, td {
 
 .thumblink:hover {
     color: gray;
+}
+
+@media only screen and (max-width: 640px) {
+    .photoicon {
+        float: left;
+        width: 100%;
+    }
+
 }
